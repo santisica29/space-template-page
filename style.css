@@ -1,7 +1,16 @@
+
 body {
-    background: #900faa;
+    background: rgb(51, 12, 99);
+    color: white;
+    margin: 0;
+    font-family: 'Poppins', 'Inter', sans-serif;
 }
 
-header li a {
-    color: white;
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
 }

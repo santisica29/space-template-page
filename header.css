@@ -1,0 +1,21 @@
+header li a {
+  color: white;
+}
+
+header {
+  height: 65px;
+  border-bottom: 2px solid whitesmoke;
+  padding: 2rem;
+}
+nav {
+  font-size: 1.2rem;
+}
+.links-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links-container a:hover {
+  text-decoration: underline;
+}

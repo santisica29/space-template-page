@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #0a0a0a;
+    padding: 1rem 2rem;
+}
+
+footer a {
+    color: grey;
+}
+
+footer a:hover {
+    color: rgb(97, 96, 96);
+}

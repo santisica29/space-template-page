@@ -1,0 +1,68 @@
+main {
+    background: rgb(71, 20, 133);
+    padding: 4rem;
+    height: 600px;
+}
+
+.main-text{
+    --bg-image: url(./images/STScI-J-v1927a-thumb.jpg);
+    text-align: center;
+    border: 2px solid beige;
+    width: 35%;
+    /* margin: 5rem 2rem; */
+    padding: 5rem 3rem;
+    border-radius: 25% 40%;
+    font-size: .9rem;
+
+    position: relative;
+    isolation: isolate;
+
+    animation-name: space-div;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+
+    transition: all 0.2s ease;
+}
+
+.main-text:hover {
+    background: #000;
+
+}
+
+.main-text::after{
+    /* https://www.youtube.com/watch?v=lRPguPbovro&ab_channel=KevinPowell */
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25% 40%;
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .75
+}
+
+.main-text span {
+    text-decoration: underline;
+}
+
+.main-text button {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .7rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.main-text button:hover {
+    background: #000;
+    color: white;
+}
+
+@keyframes space-div {
+    0% {left: 0}
+    50% {left: 20px}
+    100% {left: 0}
+}
